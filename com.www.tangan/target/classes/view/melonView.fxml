@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="785.0" prefWidth="1235.0" stylesheets="@style/melon_view.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="www.tangan.com.Controller.MelonViewController">
+   <children>
+      <Label fx:id="labelTitle" layoutX="60.0" layoutY="30.0" prefHeight="41.0" prefWidth="831.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="60.0" layoutY="75.0" prefHeight="463.0" prefWidth="684.0">
+         <content>
+            <TextArea fx:id="taContent" prefHeight="735.0" prefWidth="661.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="btnPraise" layoutX="439.0" layoutY="620.0" mnemonicParsing="false" onAction="#addToPraise" prefHeight="42.0" prefWidth="109.0" text="❤" textFill="#2fb2f585">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCollection" layoutX="260.0" layoutY="620.0" mnemonicParsing="false" onAction="#addToCollection" prefHeight="42.0" prefWidth="110.0" text="★" textFill="#2fb2f594">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="80.0" layoutY="620.0" mnemonicParsing="false" onAction="#goBack" prefHeight="42.0" prefWidth="110.0" text="↶ " textFill="#e24b0f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelTime" layoutX="624.0" layoutY="554.0" prefHeight="25.0" prefWidth="304.0" />
+      <Label fx:id="labelWriter" layoutX="69.0" layoutY="557.0" onMouseClicked="#turnToResume" prefHeight="20.0" prefWidth="170.0" textFill="#b2a227" />
+      <Button fx:id="btnDelete" layoutX="842.0" layoutY="619.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="42.0" prefWidth="66.0" text="🗑" textFill="#f02d10" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="scrollPaneComment" layoutX="799.0" layoutY="132.0" prefHeight="290.0" prefWidth="404.0">
+         <content>
+            <VBox fx:id="vBoxComment" prefHeight="502.0" prefWidth="336.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="811.0" layoutY="72.0" prefHeight="42.0" prefWidth="170.0" text="评论区" textFill="#db9821">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taReleaseComment" layoutX="800.0" layoutY="438.0" prefHeight="92.0" prefWidth="334.0" />
+      <Button layoutX="1144.0" layoutY="440.0" mnemonicParsing="false" onAction="#showReleaseComment" prefHeight="84.0" prefWidth="59.0" text="发布" />
+      <Button fx:id="btnReport" layoutX="625.0" layoutY="619.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="109.0" text="举报该瓜" textFill="#75bef2" onAction="#reportThisMelon"/>
+   </children>
+</AnchorPane>

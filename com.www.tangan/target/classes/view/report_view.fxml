@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="597.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="www.tangan.com.Controller.ReportViewController">
+   <children>
+      <Label layoutX="51.0" layoutY="421.0" text="瓜发布时间">
+         <textFill>
+            <RadialGradient centerX="0.29545454545454547" centerY="0.5436893203883495" radius="0.5">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="#3636d96a" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextArea fx:id="taContent" layoutX="45.0" layoutY="135.0" prefHeight="210.0" prefWidth="323.0" />
+      <TextArea fx:id="taReason" layoutX="403.0" layoutY="61.0" prefHeight="281.0" prefWidth="323.0" />
+      <Label fx:id="labelWriter" layoutX="207.0" layoutY="369.0" prefHeight="20.0" prefWidth="155.0" />
+      <Label layoutX="51.0" layoutY="369.0" prefHeight="20.0" prefWidth="81.0" text="被举报人">
+         <textFill>
+            <RadialGradient centerX="0.4147727272727273" centerY="0.5436893203883495" radius="0.5">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="#e01bda75" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="403.0" layoutY="27.0" text="举报原因">
+         <textFill>
+            <RadialGradient centerX="0.4715909090909091" centerY="0.5436893203883495" radius="0.5">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="#6a00ff84" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="45.0" layoutY="27.0" prefHeight="20.0" prefWidth="323.0" text="瓜瓜题目">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.8786407766990292" startX="0.9611650485436893" startY="0.33495145631067963">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="45.0" layoutY="109.0" text="瓜瓜内容">
+         <textFill>
+            <LinearGradient endX="0.970873786407767" endY="0.883495145631068" startX="0.9611650485436893" startY="0.3252427184466019">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="tfTitle" layoutX="45.0" layoutY="63.0" prefHeight="30.0" prefWidth="323.0" />
+      <Label fx:id="labelTime" layoutX="207.0" layoutY="421.0" prefHeight="20.0" prefWidth="155.0" />
+      <Label layoutX="403.0" layoutY="421.0" text="举报时间">
+         <textFill>
+            <RadialGradient centerX="0.29545454545454547" centerY="0.5436893203883495" radius="0.5">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="#3636d96a" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="labelReporter" layoutX="521.0" layoutY="369.0" prefHeight="20.0" prefWidth="200.0" />
+      <Label fx:id="labelReportTime" layoutX="554.0" layoutY="421.0" prefHeight="20.0" prefWidth="173.0" />
+      <Label layoutX="403.0" layoutY="369.0" text="举报人">
+         <textFill>
+            <RadialGradient centerX="0.29545454545454547" centerY="0.5436893203883495" radius="0.5">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="#3636d96a" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnBack" layoutX="50.0" layoutY="483.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="81.0" text="返回" onAction="#turnBack">
+         <textFill>
+            <RadialGradient centerX="0.29545454545454547" centerY="0.5436893203883495" radius="0.5">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="#5b91e3c1" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btnRecall" layoutX="496.0" layoutY="483.0" mnemonicParsing="false" onAction="#recallBackReport" prefHeight="43.0" prefWidth="81.0" text="撤销举报">
+         <textFill>
+            <RadialGradient centerX="0.29545454545454547" centerY="0.5436893203883495" radius="0.5">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="#307adbab" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="645.0" layoutY="483.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="81.0" text="制裁删除" onAction="#deleteMelon">
+         <textFill>
+            <RadialGradient centerX="0.35795454545454547" centerY="0.5436893203883495" radius="0.5">
+               <stops>
+                  <Stop color="#f226b8" />
+                  <Stop color="#55adfab0" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

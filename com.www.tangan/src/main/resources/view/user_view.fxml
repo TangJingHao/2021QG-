@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="915.0" prefWidth="1350.0" stylesheets="@style/user_view.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="www.tangan.com.Controller.UserViewController">
+   <children>
+      <TableView fx:id="table" layoutX="41.0" layoutY="187.0" prefHeight="606.0" prefWidth="1230.0">
+        <columns>
+          <TableColumn fx:id="tTitle" prefWidth="262.0" text="题目" />
+          <TableColumn fx:id="tContent" prefWidth="569.0" text="内容" />
+            <TableColumn fx:id="tCollectionNum" prefWidth="75.0" text="收藏数" />
+            <TableColumn fx:id="tPrise" minWidth="3.0" prefWidth="56.0" text="点赞数" />
+            <TableColumn fx:id="tWriter" prefWidth="136.0" text="作者" />
+            <TableColumn fx:id="tReleaseTime" minWidth="0.0" prefWidth="157.0" text="发布时间" />
+            <TableColumn fx:id="tcId" prefWidth="113.0" text="id" />
+        </columns>
+      </TableView>
+      <MenuButton layoutX="223.0" layoutY="113.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="119.0" text="查找瓜瓜">
+        <items>
+            <MenuItem fx:id="btnFindAll" mnemonicParsing="false" onAction="#addDataToTable" text="查找所有的瓜" />
+          <MenuItem fx:id="btFindMines" mnemonicParsing="false" onAction="#findAllMines" text="查找自己的瓜" />
+          <MenuItem fx:id="btnFindCollects" mnemonicParsing="false" onAction="#findAllCollects" text="查找我的收藏" />
+            <MenuItem fx:id="btFindPraise" mnemonicParsing="false" onAction="#findAllPraise" text="查找我的点赞" />
+            <MenuItem fx:id="btnFind7day" mnemonicParsing="false" onAction="#find7dayPraise" text="查7天内点赞" />
+        </items>
+      </MenuButton>
+      <Button fx:id="buttonMelon" layoutX="368.0" layoutY="113.0" mnemonicParsing="false" onAction="#turnToAddMelon" prefHeight="23.0" prefWidth="119.0" text="新建瓜瓜" />
+      <ImageView fx:id="image" fitHeight="68.0" fitWidth="83.0" layoutX="41.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="428.0" layoutY="26.0" prefHeight="39.0" prefWidth="380.0" text="欢迎来到淦淦吃瓜中心" textFill="#a73ebde5">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName" layoutX="49.0" layoutY="113.0" onMouseClicked="#turnToUpdateOwnView" prefHeight="23.0" prefWidth="168.0" text="Label" />
+      <Button fx:id="btnExit" layoutX="1159.0" layoutY="113.0" mnemonicParsing="false" onAction="#goBack" prefHeight="23.0" prefWidth="91.0" text="退出登录" />
+      <TextField fx:id="tfScan" layoutX="514.0" layoutY="113.0" />
+      <Button fx:id="tfSearch" layoutX="716.0" layoutY="113.0" mnemonicParsing="false" onAction="#findEventLike" prefHeight="30.0" prefWidth="35.0" text="🔍" />
+      <Button fx:id="btnReport" layoutX="774.0" layoutY="113.0" mnemonicParsing="false" onAction="#findAllReport" prefHeight="30.0" prefWidth="119.0" text="举报名单" visible="false" />
+      <TableView fx:id="tableReport" layoutX="41.0" layoutY="180.0" prefHeight="659.0" prefWidth="1254.0" visible="false">
+        <columns>
+          <TableColumn fx:id="tReportTitle" prefWidth="125.0" text="举报瓜题" />
+          <TableColumn fx:id="tReportContent" prefWidth="350.0" text="瓜内容" />
+            <TableColumn fx:id="tReportReason" prefWidth="403.0" text="举报原因" />
+            <TableColumn fx:id="tReporter" prefWidth="130.0" text="举报人" />
+            <TableColumn fx:id="tReportWriter" prefWidth="113.0" text="原瓜作者" />
+            <TableColumn fx:id="tReportTime" prefWidth="132.0" text="举报时间" />
+            <TableColumn fx:id="tRid" prefWidth="75.0" text="tRid" />
+        </columns>
+      </TableView>
+
+   </children>
+</AnchorPane>

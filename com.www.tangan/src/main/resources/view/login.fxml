@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" minWidth="619.0" prefHeight="431.0" prefWidth="641.0" stylesheets="@style/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="www.tangan.com.Controller.LoginViewController">
+   <children>
+      <Button fx:id="btnLogin" layoutX="464.0" layoutY="316.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="80.0" text="登录" />
+      <PasswordField id="tvPassword" fx:id="passwordField" layoutX="230.0" layoutY="246.0" prefHeight="30.0" prefWidth="195.0" />
+      <Label layoutX="122.0" layoutY="251.0" text="密码" />
+      <TextField id="tvAccount" fx:id="tfAccount" layoutX="230.0" layoutY="192.0" prefHeight="30.0" prefWidth="195.0" />
+      <Label layoutX="122.0" layoutY="197.0" text="账号" />
+      <Label fx:id="menuChooseId" layoutX="199.0" layoutY="14.0" prefHeight="78.0" prefWidth="289.0" text="欢迎来到淦淦吃瓜系统">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label id="labelRegister" fx:id="labelRegister" layoutX="480.0" layoutY="251.0" onMouseClicked="#register" text="注册账号" textFill="#b288df">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label id="labelErrorWarn" layoutX="248.0" layoutY="261.0" text="账号或者密码错误" textFill="#ca1212" visible="false" />
+<!--      <RadioButton fx:id="radioBtnUser" layoutX="87.0" layoutY="324.0" mnemonicParsing="false" text="普通用户" />
+      <RadioButton fx:id="radioBtnManager" layoutX="267.0" layoutY="324.0" mnemonicParsing="false" text="管理者" />-->
+      <Label fx:id="labelReminderNull" layoutX="266.0" layoutY="291.0" text="请不要把账号或者密码留空！" textFill="#ed1919" visible="false" />
+      <CheckBox fx:id="chooseRemember" layoutX="134.0" layoutY="332.0" mnemonicParsing="false" onAction="#rememberPassword" text="记住密码" />
+   </children>
+</AnchorPane>

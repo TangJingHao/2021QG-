@@ -1,0 +1,9 @@
+.root {
+    -fx-arc-height:100%;
+    -fx-arc-width:100%;
+    -fx-min-height: 900px;
+    -fx-min-width: 1000px;
+    -fx-background-image: url("moutain.png") no-repeat;
+    -fx-background-size:  cover;
+    -fx-background-position: center 0;
+}
